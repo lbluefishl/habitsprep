@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Equilibrium Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='equilibrium'>
+    <main id="4">
+        <div id='question-container'>
+           $$ \ce{FeF2(s) <--> Fe^{2+}(aq) + 2F-(aq)} \hskip{2em} K_1=2\times 10^{-6} $$
+           $$ \ce{F-(aq) + H+(aq) <--> HF(aq)} \hskip{2em} K_2=1\times 10^3 $$
+           $$ \ce{FeF2(s) + 2H+(aq) <--> Fe^{2+}(aq) + 2HF(aq)} \hskip{2em} K_3=? $$
+            <p>On the basis of the information above, the dissolution of \(\ce{FeF2(s)}\) in acidic solution is</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    thermodynamically favorable, because \(K_2 \gt 1\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    thermodynamically favorable, because \(K_3 \gt 1\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <u>not</u> thermodynamically favorable, because \(K_1 \lt 1\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <u>not</u> thermodynamically favorable, because \(K_3 \lt 1\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The dissolution of \(\ce{FeF2(s)}\) in acidic solution is represented by the last reaction. We can determine if it is 
+                thermodynamically favored by finding the value of \(K_3\).
+            </p>
+        <p>The following equilibrium equations can be written for the first two equations (remember that solids are not included in equilibrium equations).</p>
+        $$ \ce{FeF2(s) <--> Fe^{2+}(aq) + 2F-(aq)} \hskip{2em} K_1=2\times 10^{-6} $$
+$$ K_1 = [\ce{F-}]^2[\ce{Fe^{2+}}] $$
+
+        $$ \ce{F-(aq) + H+(aq) <--> HF(aq)} \hskip{2em} K_2=1\times 10^3 $$
+        $$ K_2 = \frac{[\ce{HF}]}{[\ce{H+}][\ce{F-}]} $$
+        <p>We can also write an equilibrium equation for the third reaction:</p>
+        $$ K_3 = \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} $$
+        <p>\(K_3\) can be obtained from \(K_1\) and \(K_2\) the following way:</p>
+    $$ K_3 = K_1\cdot K_2^2 $$
+    $$ \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} = [\ce{F-}]^2[\ce{Fe^{2+}}]\cdot\left(\frac{[\ce{HF}]}{[\ce{H+}][\ce{F-}]}\right)^2 $$
+$$ \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} =   [\ce{F-}]^2[\ce{Fe^{2+}}]\cdot \frac{[\ce{HF}]^2}{[\ce{H+}]^2[\ce{F-}]^2} $$
+$$ \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} =   \cancel{[\ce{F-}]^2}[\ce{Fe^{2+}}]\cdot \frac{[\ce{HF}]^2}{[\ce{H+}]^2\cancel{[\ce{F-}]^2}} $$
+$$ \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} = \frac{[\ce{Fe^{2+}}][\ce{HF}]^2}{[\ce{H+}]^2} $$
+<p>Therefore,</p>
+$$ K_3 = K_1\cdot K_2^2 $$
+$$ K_3 = (2\times 10^{-6}) \cdot (1\times 10^3)^2 $$
+$$ K_3 = (2\times 10^{-6})\cdot(1\times 10^6) $$
+$$ K_3 = 2 $$
+<p>Since \(K_3 \gt 1\), the forward reaction is favored.</p>
+</div>
+    </main>
+</body>
+</html>

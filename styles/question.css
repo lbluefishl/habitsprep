@@ -1,0 +1,166 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color:rgb(190, 184, 184)
+}
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 100px auto;
+    padding: 15px;
+}
+
+
+
+@media (max-width:1000px) {
+    main {
+        width: 95%;
+        padding: 5px
+    }
+
+    
+}
+ 
+
+
+#question-container {
+    margin: 15px; 
+}
+ 
+hr {
+    width: 95%;
+}
+ 
+#choices-container {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+ 
+.option-container {
+ 
+
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(245, 245, 245);
+    padding: 5px;
+    display: flex;
+}
+ 
+input {
+    margin: 15px;
+}
+ 
+#button-container {
+    margin: 5px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(206, 204, 204);
+    width: 100%;
+}
+ 
+button {
+    margin: 15px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+span.option-outcome {
+    margin: 10px;
+    padding: 10px;
+}
+ 
+label {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+  
+  div.incorrect {
+    opacity: .5;
+    background-color: salmon;
+  }
+
+  
+  div.correct {
+    border: .1em solid #add8e6;
+    background-color: lightgreen;
+    border-style: dotted  ;
+    border-color: rgb(94, 93, 93);
+  
+  }
+
+  .katex { font-size: 1em !important;
+    white-space: nowrap;
+  } 
+
+    span.code {
+        font-family:'Courier New', Courier, monospace;
+
+    }
+    li.code, ul.code {
+        font-family:'Courier New', Courier, monospace;
+       
+    }
+
+    
+    span.icode {
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: 10px;
+
+    }
+
+
+    table, td {
+        border:1px solid black;
+        max-width: 1000px;
+      padding: 10px;
+        border-collapse:collapse;
+      }
+
+
+  div#explanation {
+      flex: 1;
+      padding: 10px;
+  }
+
+  div.twobytwo-grid {
+      display: grid !important;
+      grid-template-columns: 50% 50% !important;
+      grid-row: auto auto !important;
+  }
+
+  svg embed {
+    object-fit: contain;
+ 
+  }
+
+  svg {
+
+    max-width: 100%;
+}
+
+div.explanation-header1 {
+    font-size: 40px;
+    margin: 20px;
+    font-weight: 500;
+    text-align: center;
+
+    text-decoration: underline;
+}
+
+p.code {
+    line-height: 1;
+    padding-left: 50px;
+    font-family:'Courier New', Courier, monospace;
+     margin:5px
+}

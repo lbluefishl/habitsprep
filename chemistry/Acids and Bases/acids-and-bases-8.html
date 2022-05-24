@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Acids and Bases Question 8</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+ 
+</head>
+<body id='acids-and-bases'>
+    <main id="8">
+        <div id='question-container'>
+           <p>A solution containing \(\ce{HCl}\) and the weak acid \(\ce{HClO2}\) has a pH of 2.4. Enough \(\ce{KOH(aq)}\) is added to the solution to increase the 
+               pH to 10.5. The amount of which of the following species increases as the \(\ce{KOH(aq)}\) is added?
+           </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\ce{Cl-(aq)}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(\ce{H+(aq)}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\ce{ClO2-(aq)}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\ce{HClO2(aq)}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The strong base and acid will react and neutralize first:</p>
+            $$ \ce{KOH(aq) + HCl(aq) -> H2O(l) + K+(aq) + Cl-(aq)} $$
+            
+            <p>Since the solution becomes alkaline, we can infer that more strong base is added. The base would react with \(\ce{HClO2}\):</p>
+            $$ \ce{KOH(aq) + HClO2(aq) -> H2O(l) + K+(aq) + ClO2-(aq) } $$
+            <p>Note that there are two reasonable options that increase in solution: \(\ce{Cl-(aq)}\) and \(\ce{ClO2-(aq)}\). 
+                However, since we know that \(\ce{HCl}\) is a stronger acid than \(\ce{HClO2}\), the \(\ce{Cl-}\) ions were already 
+                present in solution throughout the process. On the other hand, most of the \(\ce{ClO2-(aq)}\) ions did not dissociate from the weak acid at the start of the reactions. It is only after the strong base liberates the proton do \(\ce{ClO2-(aq)}\) ions noticeably increase.
+            </p>
+        </div> 
+    </main>
+</body>
+</html>

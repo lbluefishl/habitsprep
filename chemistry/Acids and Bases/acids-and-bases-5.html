@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Acids and Bases Question 5</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='acids-and-bases'>
+    <main id="5">
+        <div id='question-container'>
+$$  \begin{array}{|c|c|} \hline 
+\text{Acid} & \text{Volume of} \\ 
+\text{Solution} & \ce{NaOH} \text{ Added (mL)} \\ \hline \hline 
+\text{A} & 40 \\ \hline
+\text{B} & 75 \\ \hline
+\text{C} & 115 \\ \hline
+\text{D} & 200 \\ \hline
+\end{array}
+
+
+
+$$
+
+           <p>To maximize the yield in a certain manufacturing process, a solution of a weak monoprotic acid that has a concentration 
+               between 0.20 \(M\) and 0.30 \(M\) is required. Four 100. mL samples of the acid at different concentrations are each 
+               titrated with a 0.20 \(M&nbsp\ce{NaOH}\) solution. The volume of \(\ce{NaOH}\) needed to reach the end point for each sample is given 
+               in the table above. Which solution is the most suitable to maximize the yield?
+           </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Solution A
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Solution B
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Solution C
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Solution D
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>To reach end point, the number of moles of hydronium ions and hydroxide ions are equivalent. 
+                We first calculate the range of hydronium ions available.</p>
+            <p>Since the acid is monoprotic, the moles of acid is equal to the moles of hydronium:</p>
+            <div style="columns:2">
+                <div style="text-align: center;">Lower value</div>
+            $$ 0.20 M \text{ Acid} = \frac{\pu{0.20 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.20 mol}}{\pu{1 L}}\times \pu{0.100 L} = \pu{0.02 mol} $$
+            <div style="text-align: center;">Upper value</div>
+            $$ 0.30 M \text{ Acid} = \frac{\pu{0.30 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.30 mol}}{\pu{1 L}}\times \pu{0.100 L} = \pu{0.03 mol} $$
+
+            </div>
+
+            <p>We can do a similar calculation for the base to see how many hydoxide ions are present.  </p>
+            <div style="columns:2">
+                <div style="text-align: center;">Solution A</div>
+            $$ 0.20 M \text{ Hydroxide} = \frac{\pu{0.20 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.20 mol}}{\pu{1 L}}\times \pu{0.040 L} = \pu{0.008 mol} $$
+
+            <div style="text-align: center;">Solution C</div>
+            $$ 0.20 M \text{ Hydroxide} = \frac{\pu{0.20 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.20 mol}}{\pu{1 L}}\times \pu{0.115 L} = \pu{0.023 mol} $$
+            <div style="text-align: center;">Solution B</div>
+            $$ 0.20 M \text{ Hydroxide} = \frac{\pu{0.20 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.20 mol}}{\pu{1 L}}\times \pu{0.075 L} = \pu{0.015 mol} $$
+            <div style="text-align: center;">Solution D</div>
+            $$ 0.20 M \text{ Hydroxide} = \frac{\pu{0.20 mol}}{\pu{1 L}} $$
+            $$ \frac{\pu{0.20 mol}}{\pu{1 L}}\times \pu{0.200 L} = \pu{0.040 mol} $$
+            </div>
+            <p>Solution C provides an end point in which the number of moles of hydroxide ions is equal to an acceptable number of moles of hydronium ions.</p>
+        </div>
+    </main>
+</body>
+</html>

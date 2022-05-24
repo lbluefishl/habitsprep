@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Le Chatelier's Principle Question 5</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='le-chateliers-principle'>
+    <main id="5">
+        <div id='question-container'>
+           $$ \ce{CO(g) + 2H2(g) <--> CH3OH(g)} \hskip{2em} \Delta H \lt 0 $$
+            <p>The synthesis of \(\ce{CH3OH(g)}\) from \(\ce{CO(g)}\) and \(\ce{H2(g)}\) is represented by the equation above. The 
+                value of \(K_c\) for the reaction at 483 K is 14.5.
+            </p>
+            <p>Which of the following explains the effect on the equilibrium constant, \(K_c\), when the temperature of the reaction system is increased to 650 K?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(K_c\) will increase because the activation energy of the forward reaction increases more than that of the reverse reaction.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(K_c\) will increase because there are more reactant molecules than product molecules.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(K_c\) will decrease because the reaction is exothermic.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(K_c\) is constant and will not change.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Since \(\Delta H \lt 0\), the reaction is exothermic and we can treat heat as a product.</p>
+            $$ \ce{CO(g) + 2H2(g) <--> CH3OH(g)} + \text{heat}  $$
+            <p>Since the temperature is increasing, we should expect a shift in equilibrium position to the left since products are being added.</p>
+            <p>The value of \(K_c\) will decrease since more reactants are being made (denominator increasing).</p>
+            $$ K_c = \frac{[\ce{CH3OH(g)}]}{[\ce{CO(g)}][\ce{H2(g)}]^2} $$
+        </div>
+    </main>
+</body>
+</html>

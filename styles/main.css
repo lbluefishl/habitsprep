@@ -1,0 +1,38 @@
+
+
+html {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    background-color:rgb(255, 255, 255)
+    
+}
+div.courses-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+div.course-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+a.course {
+    border: solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(203, 255, 255);
+    margin: 10px;
+}
+
+a.course:hover,
+a.course:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}

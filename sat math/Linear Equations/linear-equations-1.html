@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Linear Equations Question 1</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='linear-equations'>
+    <main id="1">
+        <div id='question-container'>
+            
+                <p>What is the equation of a line passing through the points \((0,4)\) and \((2,5)\)?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">\(y=\frac{1}{2}x+4\)</label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">\(y=2x+4\)</label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">\(y=-\frac{1}{2}x+4\)</label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">\(y=\frac{9}{2}x+4\)</label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display:none;">
+            
+            <div class="explanation-header1"> Approach 1 </div>
+            <p>First, find the slope between the two points using the slope formula. </p>
+              $$ m=\frac{y_2-y_1}{x_2-x_1} $$
+            <p>  Using \((0,4)\) as \((x_1,y_1)\) and \((2,5)\) as \((x_2,y_2)\), we have</p>
+             $$ m=\frac{5-4}{2-0}=\frac{1}{2} $$
+            <p>Plug these into the point-slope formula using either of the points.</p>
+            $$ y-y_1=m(x-x_1)$$
+            <p>If we use the point \((0,4)\) and the slope \((m=\frac{1}{2})\), we obtain: </p>
+            $$y-4=\frac{1}{2}(x-0)$$
+            $$y-4=\frac{1}{2}x$$
+            $$y=\frac{1}{2}x+4$$
+            
+            <div class="explanation-header1"> Approach 2 </div>
+            <p>Similar to the first approach, we first find the slope of the equation by using the two points. </p>
+            $$m=\frac{1}{2}$$
+            <p> We plug the slope and a point into the slope-intercept formula.</p>
+            $$y=mx+b$$   
+            <p>Using the point \((0,4)\) and \(m=\frac{1}{2}\), we obtain </p>
+            $$4=\frac{1}{2}(0)+b$$
+            $$4=b$$
+            <p>We use the slope and y-intercept to write the equation.</p>
+            $$y=\frac{1}{2}x+4$$
+            
+            <div class="explanation-header1"> Approach 3 </div>
+            <p>To check if several points are on the same line, simply plug the points into the answer choices.
+              If we go from top to bottom, we get lucky,  the first answer choice works. </p>
+            
+              <div style="columns: 2;">
+              <div style="text-align: center;">For the point \((0,4)\) </div>
+              $$y=\frac{1}{2}x+4$$
+              $$4=\frac{1}{2}(0)+4$$
+              $$4=4 \ \ \ &#10003 $$
+             <div style="text-align: center;"> For the point \((2,5\)) </div>
+              $$y=\frac{1}{2}x+4$$
+              $$5=\frac{1}{2}(2)+4$$
+              $$5=5 \ \ \ &#10003 $$
+            
+            </div>
+           
+            </div>
+    </main>
+</body>
+</html>
