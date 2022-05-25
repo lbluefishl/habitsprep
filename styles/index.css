@@ -37,8 +37,8 @@ h2 {
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
-    white-space: nowrap;
     display: none;
+    width: 5rem;
 }
 
 .button {
