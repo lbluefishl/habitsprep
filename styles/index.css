@@ -1,9 +1,9 @@
 :root {
     --container-bg-color: #333;
-    --left-bg-color: rgba(199, 101, 101, 0.7);
-    --left-button-hover-color: rgba(161, 11, 11, 0.3);
+    --left-bg-color: rgba(155, 136, 136, 0.7);
+    --left-button-hover-color: rgba(0, 0, 0, 0.3);
     --right-bg-color: rgba(136, 128, 128, 0.8);
-    --right-button-hover-color: rgba(214, 200, 200, 0.3);
+    --right-button-hover-color: rgba(0, 0, 0, 0.3);
     --hover-width: 75%;
     --other-width: 25%;
     --speed: 1000ms;
@@ -34,8 +34,8 @@ h2 {
     font-size: 3rem;
     color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 55%;
+    top: 45%;
     transform: translateX(-50%);
     display: none;
     width: 5rem;
@@ -50,7 +50,7 @@ h2 {
     padding-top: 1.3rem;
     width: 25rem;
     text-align: center;
-    background-color: darkgray;
+    background-color: rgb(97, 97, 97);
     color: white;
     border: white solid 0.2rem;
     font-size: 2rem;
