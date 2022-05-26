@@ -1,0 +1,134 @@
+html, body {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+line-height: 1.5;
+
+}
+
+p {
+    font-size: 1rem;
+    padding: 1em;
+    text-align: left;
+}
+
+p.center-paragraph {
+    text-align:center; padding: 1em 20em; 
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.linktosection {
+    font-size: 3em;
+    padding: 0.1em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+  .two-column-container {
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+
+
+  }
+
+  .container {
+      width: 40%;
+      text-align: center;
+      padding: 2em;
+    margin: auto;
+      
+  }
+
+  img {
+    align-self: center;
+    width: 100%;
+  }
+
+
+.tabbar {
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.tabbutton:hover {
+    background-color: #ddd;
+}
+
+
+  
+
+.tabbutton {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em 2em;
+    transition: 0.3s;
+    font-size: 2em;
+}
+
+.highlighted {
+    background-color: rgb(194, 185, 185);
+}
+
+.tab {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+li {
+    padding: 0.5em;
+    margin: 1em 25%;
+    width: 50%;
+}
+
+.takeaway-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0em 6em;
+}
+
+.container-ta1 {
+    width: 44%;
+    text-align: center;
+  
+}
+
+.container-ta2 {
+    width: 12%;
+    text-align: center;
+   margin: auto;
+}
+
+p.ta {
+    margin: 0;
+    padding: 1em 6em;
+    text-align: left;
+}
+
+.para-header {
+    text-align: center;
+    font-size: 5em;
+    margin: 0em;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <link href="../styles/habits.css" rel="stylesheet">
+    <script src="../scripts/motivation.js" defer></script>
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: 
+          linear-gradient(rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.1)),
+                url(img/motivation1.jpg);
+          /* Set a specific height */
+          min-height: 1000px; 
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+</head>
+
+<body>
+
+
+ <div class="parallax">
+    <p class="para-header" style="padding: 1em 5em;">Motivation</p>
+
+ </div>
+
+
+    <div style="text-align: center">
+        <p class="center-paragraph">It's not too uncommon to associate motivation to catch-phrases,
+            celebrity spokespeople, and miracle stories.
+            Long term motivation for students is a bit more subtle, but can be broken down into three main influences.
+            Let's familiarize ourselves with them.
+        </p>
+    </div>
+
+    <div class="tabbar">
+        <button class="tabbutton highlighted" onclick="openTab(event, 'Environment')">Environment</button>
+        <button class="tabbutton" onclick="openTab(event, 'Efficacy')">Efficacy</button>
+        <button class="tabbutton" onclick="openTab(event, 'Value')">Value</button>
+    </div>
+
+
+    <div class="tab" style="display: block" id="Environment">
+
+            <h2 style="text-align:center"></h2>
+
+
+            <div style="text-align: center;">
+                <p style="text-align:left; padding: 1em 10em;">A student's surroundings will undoubtedly have a significant influence on
+                    behavior and motivation.
+                    Static elements (environmental cues) and peers (social cues) each are given a dedicated section
+                    elsewhere on this site due to their enormous influence.
+                    Here are two studies which should give you a basic understanding of the power of
+                    environmental and social cues on motivation:
+                </p>
+            </div>
+
+      
+
+
+        <div class="two-column-container">
+            <div class="container">
+                <h2>Broken Windows Theory</h2>
+                <p>From 2004 to 2006, Stephen B. Plank and colleagues from Johns Hopkins University conducted a
+                    correlational <a href="https://www.journals.uchicago.edu/doi/10.1086/595669" target="_blank">study</a> to determine the degree to which the physical appearance of the school
+                    and classroom setting influence student behavior, particularly in respect to the variables
+                    concerned in their study: fear, social disorder, and collective efficacy.
+                    They collected survey data administered to 6th-8th students by 33 public schools in a large
+                    mid-Atlantic city.
+                    From analyses of the survey data, the researchers determined that the variables in their
+                    study
+                    are statistically significant to the physical conditions of the school and classroom
+                    setting. </p>
+
+                <p><i>...the findings of the current study suggest that educators and researchers should be vigilant
+                        about factors that influence student perceptions of climate and safety. Fixing broken windows
+                        and attending to the physical appearance of a school cannot alone guarantee productive teaching
+                        and learning, but ignoring them likely greatly increases the chances of a troubling downward
+                        spiral.</i></p>
+            </div>
+
+            <div class="container">
+                <img src="img/disruptiveclassroom.jpg">
+              
+            </div>
+
+        </div>
+
+
+        <div class="two-column-container">
+            <div class="container">
+                <img src="img/classtable.jpg">
+    
+               </div>
+            <div class="container">
+                <h2>Group Composition</h2>
+                <p> A <a href="https://www.nber.org/papers/w7867" target="_blank">report</a> from Caroline Hoxby suggest that having a more female peer group raises both male and
+                    female scores in reading and math.
+                    To identify true peer effects, Hoxby compares groups within a given school that differ randomly in
+                    peer composition. She controls for other common variables, such as home environment and student
+                    achievement.
+                    One of her results suggestted that having a more female peer group raises both male and female
+                    scores in reading and math.
+                    She points out that only some of the "good" peer effect of females can be direct learning spillovers
+                    because females do not know math better than males on average, although they are better readers. The
+                    fact that females raise math scores, therefore, must be due to phenomena more general than direct
+                    learning spillovers -- for instance, females' lower tendency to disrupt.</p>
+
+            </div>
+ 
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div style="text-align: center;">
+            <p class="center-paragraph">Small differences can accumulate and undergo exponential change over the course
+                of many years.
+                Studies like the ones suggest cryptic influences on behavior. For example, a poorly maintained class may
+                be detrimental to motivation.
+                Having male tablemates may result in dramatically different scores in math than having female
+                tablemates.
+                Many of these variables are beyond our control, but we should be aware of their influence.
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="tab" style="display:none" id="Efficacy">
+        <h2 style="text-align:center"></h2>
+
+
+        <div style="text-align: center;">
+            <p style="text-align:left; padding: 1em 10em;">A student's efficacy (effectiveness) in doing a certain task will influence behavior. Typically, individuals are motivated to do tasks that are a little more difficult than they can normally handle. Anything too easy or too difficult will each correspond to poor motivation.
+                In addition, a student's perception of their efficacy also plays a large role in motivation. 
+                Even if a student is capable of doing a task, their perception of their ability may influence and produce 
+                negative results. 
+            </p>
+        </div>
+
+        
+        <div class="two-column-container">
+            <div class="container">
+                <img src="img/stereotype.jpg">
+    
+               </div>
+            <div class="container">
+                <h2>Stereotype Threat</h2>
+                <p> Are women worse at math than men? Not necessarily, research shows, but there sure is a generalization about it. 
+                    A <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022103198913737" target="_blank" >study</a> explored whether the perception of gender differences could affect mathematical ability. 
+                    The studies found that differences in performance 
+                    could be eliminated when stereotype threat was lowered by 
+                    describing the test as not producing gender differences. 
+                    However, when the test was described as producing gender
+                     differences and stereotype threat was high, women performed 
+                     substantially worse than equally qualified men did.
+                </p>
+                <p>Similarly disheartening <a href="https://www.jstor.org/stable/40063382" target="_blank">studies</a> showed similar results with race. Subjects who were primed (exposed) to racial prejudices (asians are better at this type of math)
+                     before a math test performed significantly worse. Conversely, scores increased for individuals who conform to the stereotypes were exposed prior to assessment compared to similar individuals who were not exposed.</p>
+            </div>
+ 
+
+        </div>
+        <div class="two-column-container">
+
+            <div class="container">
+                <h2>Perspective</h2>
+                <p>
+                    An <a href="https://www.jstor.org/stable/40196120" target="_blank">analysis</a> showed that the reasons students identify for their previous successes and failures may be an important determinant of expectancies, and therefore, motivation. 
+                    Students who attribute their success to internal or controllable causes (their talents, abilities, 
+                    persistence, or effort) are more likely to obtain success than students who attribute success or failure to external or uncontrollable causes ("I'm bad at math"). 
+                    Simply changing the attribution from "I'm not a good writer" to "I should have prepared more" helps keep motivation high.
+                </p>
+            </div>
+            <div class="container">
+                <img src="img/perspective.jpg" style="width: 300px;">
+     
+               </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="tab" style="display:none" id="Value">
+        <h2 style="text-align:center"></h2>
+
+
+        <div style="text-align: center;">
+            <p style="text-align:left; padding: 1em 10em;">
+                Value falls into three broad categories. The first is attainment value, or satisfaction of completing or mastering something. Another is intrinsic value, which represents satisfaction from simply doing a task. The last is extrinsic value, which involve things like grades, money, or fame. These three often work in parallel. 
+                Students may be first influenced by extrinsic rewards but find out they really like doing a task (intrinsic). When completing it they obtain a sense of accomplishment (attainment) which spurs similar activity. 
+                Extrinsic value is the realm most heavily influenced. Let's take a look at some relevant studies.
+            </p>
+        </div>
+
+        <div class="two-column-container">
+
+            <div class="container">
+                <h2>Threats and Punishment</h2>
+                <p>
+                    Here's an old, but important <a href="https://www.sciencedirect.com/science/article/abs/pii/0022103165900429" target="_blank">study</a>. Jonathan Freedman investigated whether threats could produce long-term behavioral effects.  
+                    Children were told not to play with a very 
+                    desirable toy under high or low threat, and were left alone with the toy. A high threat would be something like, "If you play with the robot, I'll be very angry and will have to do something about it." A low threat would be, "It is wrong to play with the robot." In both cases, children initially resisted playing with the toy, irregardless of its severity of threat. No surprise here.
+                      </p>
+                     
+                     <p>6 weeks later, the children came back and had a chance to do unrelated activities in the absence of the experimenter. Children that had initially been in the high threat group were much more likely to play with the previously forbidden toy then the students in the low threat group. 
+                  
+                </p>
+                <p>What are the implications of the study? Threats work in the short term. In the long term, stronger threats will negatively affect behavior. Some researchers have commented that when decisions are made by students themselves, they are much more likely to be followed. Threats work, but they support a notion that behavior should only be done when associated with a threat. When the threat is removed, the behavior would resume. It is possible that punishment follows similar routes; they work when implemented, but result in poor long term habits or independent functioning.</p>
+            </div>
+            <div class="container">
+
+                <img src="img/threat.jpg" style="width: 400px;">
+     
+               </div>
+
+        </div>
+
+
+        <div class="two-column-container">
+
+            <div class="container">
+
+                <img src="img/reward.jpg" style="width: 400px;">
+     
+            </div>
+
+
+            <div class="container">
+
+                <h2>Reward</h2>
+                <p>
+                    Generally, reinforcement has been shown to help learning outcomes. But like with all good things, they come with the bad. <a href="https://journals.sagepub.com/doi/abs/10.3102/00346543071001001" target="_blank">Studies</a> have shown that extrinsic rewards, tangible rewards like stickers, pizza parties, student awards, may reduce intrinsic motivation. Studies have shown that strong intrinsic motivation is linked to high-quality learning and adjustment.
+                    Similar to punishment, students may begin to associate working hard with the reward and not the process of learning itself.
+                </p>
+        
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div style="text-align: center">
+      
+        <p class="center-paragraph">
+        The book <a href="https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104" target="_blank">How Learning Works</a> describes these three factors in detail. The three levers (value, efficacy expectancies, and the environment) can influence motivation. Neglect of any one of the three can substantially influence motivation. 
+        Below are general cases might occur under different circumstances. 
+
+        </p>
+        <img src="img/motivation2.png" style="width: 50%"> 
+        <ul style="text-align: left; padding: 2em;">
+            <li>Rejecting: Students care little about a goal and have little confidence intheir abilities to achieve that goal. Common signs are 
+                apathy, general passivity, alientation, or anger in a coercive but supportive environment.
+            </li>
+<li>Evading: Students see little value in a goal but are confident in their abilities to achieve it. Students have difficulty paying attention and are distracted easily. They may do the bare minimum amount of work to get by. </li>
+<li>Hopeless: Students who lack confidence in their ability and have little or no support from their environment.</li>
+<li>Fragile: A supportive environment is present and they see value. Though they want success, they are not sure of their own abilities. These students may feign understanding, avoid overt performance, deny difficulty, and make excuses for poor performance.</li>
+       <li>Defiant: With not support from the environment, someone capable and who sees value in a task can try to "prove you wrong" or "show you" to try to get back at someone.</li>
+</ul>
+
+
+
+        
+    </div>
+<hr>
+<h2 style="text-align: center;">Takeaways and Considerations</h2>
+
+<div class="takeaway-container">
+   <div class="container-ta1">
+<p class="ta">The environment has a significant influence on motivation. Classroom atmosphere impacts day to day behavior.</p>
+   </div>
+   <div class="container-ta2">&rarr;</div>
+   <div class="container-ta1">
+<p class="ta">Carefully choose classes based on class environment in addition to academic goals. Obtain information from past students if possible. </p>
+   </div>
+</div>
+
+<div class="takeaway-container">
+    <div class="container-ta1">
+ <p class="ta">The place where you situate yourself in a classroom may impact learning.</p>
+    </div>
+    <div class="container-ta2">&rarr;</div>
+    <div class="container-ta1">
+ <p class="ta">Choose seating to avoid distractions and problem students. Put yourself in the front of the class.</p>
+    </div>
+ </div>
+
+
+ <div class="takeaway-container">
+    <div class="container-ta1">
+ <p class="ta">Your perceptions about your abilities influence behavior. The perception of control can help sustain motivation.</p>
+    </div>
+    <div class="container-ta2">&rarr;</div>
+    <div class="container-ta1">
+ <p class="ta">Avoid focusing on things that are beyond control such as having a bad teacher or not being a "math person". Shift your thoughts to things you can control. After doing poorly, think about the factors you control. "I'll put more work in next time." </p>
+    </div>
+ </div>
+
+ <div class="takeaway-container">
+    <div class="container-ta1">
+ <p class="ta">Be cautious of extrinsic rewards and punishments.</p>
+    </div>
+    <div class="container-ta2">&rarr;</div>
+    <div class="container-ta1">
+ <p class="ta">Threats and rewards are short term solutions. In the long term, they do more harm than good.  </p>
+    </div>
+ </div>
+
+</body>
+
+</html>

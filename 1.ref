@@ -66,3 +66,24 @@ line([0,-10],[0,10])
               <li>\(5\)</li>
               <li>\(6\)</li>
               </ul>
+
+
+
+
+
+
+
+
+
+
+
+                              <p>
+                    Here's an old, but important <a href="https://www.sciencedirect.com/science/article/abs/pii/0022103165900429" target="_blank">study</a>. Jonathan Freedman investigated whether threats could produce long-term behavioral effects.  
+                    Children were told not to play with a very 
+                    desirable toy under high or low threat, and were left alone with the toy. Those who did not
+                     play with it were given a second opportunity to play with the toy several weeks later, with the original threat removed. 
+                     What were the results? </p>
+                     
+                     <p>When the threat was removed, the group that was initially threatened were more likely to engage in the unwanted behavior.
+                      The group that was not threatened initially continued to follow the order.
+                </p>
