@@ -102,7 +102,7 @@ li {
 .takeaway-container {
     display: flex;
     flex-direction: row;
-    margin: 0em 6em;
+    margin: 0em 5%;
 }
 
 .container-ta1 {
