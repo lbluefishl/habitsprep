@@ -200,6 +200,7 @@ img.icon:hover {
 
   .reveal.active{
   animation: fadeIn 3s;
+  opacity: 1;
   }
 
   .reveal-left{
