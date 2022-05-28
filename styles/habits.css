@@ -13,8 +13,8 @@ p {
 }
 
 p.center-paragraph {
-    text-align:center; padding: 1em 20em; 
-    
+    text-align:left; padding: 1em 13em; 
+    font-size: 1.5em;
 }
 
 h2 {
@@ -136,3 +136,119 @@ p.ta {
     text-transform: uppercase;
     font-weight: 900;
 }
+
+p.center {
+    text-align:left;
+     padding: 1em 10em;
+}
+
+
+
+li.grid {
+    width: 33%;
+    float:left;
+    height: 420px;
+    text-align: center;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    font-size:0.5em;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+
+
+div.grid-container {
+    width: 90%;
+padding: 1em;
+margin: 0 auto;
+height: 60em;
+}
+
+img {
+    padding: 50px 0 0 0;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+h3.title {
+    margin: 20px 0 10px 0;
+padding: 20px 0 0 0;
+font-size: 3em;
+position: relative;
+transition: transform 0.2s;
+
+
+}
+
+a.grid-link {
+    text-decoration: none;
+    color: black;
+}
+
+img.icon:hover {
+    transform: scale(1.3);
+}
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+
+
+  .reveal.active{
+  animation: fadeIn 3s;
+  }
+
+  .reveal-left{
+    position: relative;
+     opacity: 0;
+     transition: 2s all ease;
+     }
+
+  .reveal-left.active{
+    animation: fade-left 1s ease-in;
+    opacity: 1;
+  }
+
+  .reveal-right{
+    position: relative;
+     opacity: 0;
+     transition: 2s all ease;
+     }
+
+  .reveal-right.active{
+    animation: fade-right 1s ease-in;
+    opacity: 1;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  
