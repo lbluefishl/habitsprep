@@ -58,6 +58,7 @@ justify-content: center;
   img {
     align-self: center;
     width: 100%;
+    max-width: 100%;
   }
 
 
