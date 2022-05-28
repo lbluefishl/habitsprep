@@ -2,7 +2,7 @@
 
 html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+    font-size: 20px;
     background-color:rgb(255, 255, 255)
     
 }
@@ -35,4 +35,190 @@ a.course:hover,
 a.course:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  .fadeInAnimation1 {
+    animation: fadeInAnimation1 ease 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.fadeInAnimation2 {
+  animation: fadeInAnimation2 ease 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 500;
+}
+
+@keyframes fadeInAnimation2 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation3 {
+  animation: fadeInAnimation3 ease 5s;
+  animation-delay: 1000;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation3 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation4 {
+  animation: fadeInAnimation4 ease 5s;
+  animation-delay: 1500;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation4 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation5 {
+  animation: fadeInAnimation5 ease 5s;
+  animation-delay: 2000;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation5 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation6 {
+  animation: fadeInAnimation6 ease 5s;
+  animation-delay: 2500;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation6 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation7 {
+  animation: fadeInAnimation7 ease 5s;
+  animation-delay: 3000;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation7 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation8 {
+  animation: fadeInAnimation8 ease 5s;
+  animation-delay: 3500;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation8 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.fadeInAnimation9 {
+  animation: fadeInAnimation9 ease 5s;
+  animation-delay: 4000;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation9 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+li.grid {
+    width: 33%;
+    float:left;
+    height: 420px;
+    text-align: center;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    font-size:0.5em;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+
+
+div.grid-container {
+    width: 90%;
+padding: 1em;
+margin: 0 auto;
+height: 60em;
+}
+
+img {
+    padding: 50px 0 0 0;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+h3.title {
+    margin: 20px 0 10px 0;
+padding: 20px 0 0 0;
+font-size: 3em;
+position: relative;
+transition: transform 0.2s;
+
+
+}
+
+a.grid-link {
+    text-decoration: none;
+    color: black;
+}
+
+img.icon:hover {
+    transform: scale(1.3);
 }

@@ -3,6 +3,8 @@ const right = document.querySelector('.right');
 const container = document.querySelector('.container');
 const details1 = document.querySelector('h2.left');
 const details2 = document.querySelector('h2.right');
+const button1 = document.querySelector('#button1'); 
+const button2 = document.querySelector('#button2'); 
 
 var typed = new Typed('.auto-type', {
     strings: ['Research-based, Experience-backed Principles.'],
@@ -26,7 +28,8 @@ var typed2 = new Typed('.auto-type2', {
 left.addEventListener('mouseenter', () => {
     container.classList.add('hover-left');
         details1.style.display = 'block';
-     
+     button1.style.display = 'block';
+     button1.classList.add('fade-in')
 });
 
 left.addEventListener('mouseleave', () => {
@@ -34,12 +37,14 @@ left.addEventListener('mouseleave', () => {
     details1.style.display = 'none';
     typed.reset();
     typed2.reset();
+    button1.style.display = 'none';
 });
 
 right.addEventListener('mouseenter', () => {
     container.classList.add('hover-right');
     details2.style.display = 'block';
- 
+    button2.style.display = 'block';
+    button2.classList.add('fade-in')
 });
 
 right.addEventListener('mouseleave', () => {
@@ -47,6 +52,8 @@ right.addEventListener('mouseleave', () => {
     details2.style.display = 'none';
     typed.reset();
     typed2.reset();
+    button2.style.display = 'none';
+
 });
 
 
