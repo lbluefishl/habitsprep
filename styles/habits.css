@@ -1,269 +1,279 @@
-html, body {
+html,
+body {
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
-line-height: 1.5;
+  line-height: 1.5;
 
 }
 
 p {
-    font-size: 1rem;
-    padding: 1em;
-    text-align: left;
+  font-size: 1rem;
+
+  text-align: left;
 }
 
 p.center-paragraph {
-    text-align:left; padding: 5% 5%; 
-    font-size: 1.5em;
+  text-align: left;
+  padding: 5% 5%;
+  font-size: 1.5em;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .linktosection {
-    font-size: 3em;
-    padding: 0.1em;
-    display: block;
-    text-decoration: none;
-    color: black;
-    text-align: center; 
-    border:solid #ccc;
+  font-size: 3em;
+  padding: 0.1em;
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: solid #ccc;
 }
 
 img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
-  .two-column-container {
-    display: flex;
-    flex-direction: row;
-justify-content: center;
+.two-column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+margin: 1em;
 
+}
 
-  }
+.container {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  position: relative;
 
-  .container {
-      width: 40%;
-      text-align: center;
-      padding: 2em;
-    margin: auto;
-      
-  }
+}
 
-  img {
-    align-self: center;
-    width: 100%;
-  }
+img {
+  align-self: center;
+  width: 100%;
+}
 
 
 .tabbar {
-    text-align: center;
-    overflow: hidden;
+  text-align: center;
+  overflow: hidden;
 
 }
 
 .tabbutton:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 
-  
+
 
 .tabbutton {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5em 2em;
-    transition: 0.3s;
-    font-size: 2em;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 2em;
+  transition: 0.3s;
+  font-size: 2em;
 }
 
 .highlighted {
-    background-color: rgb(194, 185, 185);
+  background-color: rgb(194, 185, 185);
 }
 
 .tab {
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
 li {
-    padding: 0.5em;
-    margin: 1em 25%;
-    width: 50%;
+  padding: 0.5em;
+  margin: 1em 25%;
+  width: 50%;
 }
 
 .takeaway-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0em 5%;
+  display: flex;
+  flex-direction: row;
+  margin: 0em 5%;
 }
 
 .container-ta1 {
-    width: 44%;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-  
+  width: 44%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
 }
 
 .container-ta2 {
-    width: 12%;
-    text-align: center;
-   margin: auto;
-   font-size: 2em;
+  width: 12%;
+  text-align: center;
+  margin: auto;
+  font-size: 2em;
 }
 
 p.ta {
-    margin: 0;
-    padding: 1em 5%;
-    text-align: left;
+  margin: 0;
+  padding: 1em 5%;
+  text-align: left;
 }
 
 .para-header {
-    text-align: center;
-    font-size: 5em;
-    margin: 0em;
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
+  text-align: center;
+  font-size: 5em;
+  margin: 0em;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 p.center {
-    text-align:left;
-     padding: 1em 10em;
+  text-align: left;
+  padding: 1em 10em;
 }
 
 
 
 li.grid {
-    width: 33%;
-    float:left;
-    height: 420px;
-    text-align: center;
-    border-top: none;
-    padding: 0;
-    margin: 0;
-    font-size:0.5em;
-    box-shadow: 1px 1px 1px #ddd;
+  width: 33%;
+  float: left;
+  height: 420px;
+  text-align: center;
+  border-top: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.5em;
+  box-shadow: 1px 1px 1px #ddd;
 }
 
 
 
 div.grid-container {
-    width: 90%;
-padding: 1em;
-margin: 0 auto;
-height: 60em;
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto;
+  height: 60em;
 }
 
 img {
-    padding: 50px 0 0 0;
-    transition: transform 0.2s;
-    text-align: center;
+  padding: 50px 0 0 0;
+  transition: transform 0.2s;
+  text-align: center;
 }
 
 h3.title {
-    margin: 20px 0 10px 0;
-padding: 20px 0 0 0;
-font-size: 3em;
-position: relative;
-transition: transform 0.2s;
+  margin: 20px 0 10px 0;
+  padding: 20px 0 0 0;
+  font-size: 3em;
+  position: relative;
+  transition: transform 0.2s;
 
 
 }
 
 a.grid-link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 img.icon:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
-.reveal{
-    position: relative;
-    opacity: 0;
-    transition: 2s all ease;
-  }
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: 2s all ease;
+}
 
 
 
-  .reveal.active{
+.reveal.active {
   animation: fadeIn 3s;
   opacity: 1;
+}
+
+.reveal-left {
+  position: relative;
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal-left.active {
+  animation: fade-left 1s ease-in;
+  opacity: 1;
+}
+
+.reveal-right {
+  position: relative;
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal-right.active {
+  animation: fade-right 1s ease-in;
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
   }
 
-  .reveal-left{
-    position: relative;
-     opacity: 0;
-     transition: 2s all ease;
-     }
-
-  .reveal-left.active{
-    animation: fade-left 1s ease-in;
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
+}
 
-  .reveal-right{
-    position: relative;
-     opacity: 0;
-     transition: 2s all ease;
-     }
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
 
-  .reveal-right.active{
-    animation: fade-right 1s ease-in;
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
+}
 
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
 
-  @keyframes fade-right {
-    0% {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation1 {
+  animation: fadeInAnimation1 ease 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation1 {
+  0% {
+    opacity: 0;
   }
 
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  100% {
+    opacity: 1;
   }
-
-  .fadeInAnimation1 {
-    animation: fadeInAnimation1 ease 5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes fadeInAnimation1 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
 }
 
 .fadeInAnimation2 {
@@ -274,11 +284,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation2 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation3 {
@@ -289,11 +300,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation3 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation4 {
@@ -304,11 +316,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation4 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation5 {
@@ -319,11 +332,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation5 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation6 {
@@ -334,11 +348,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation6 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation7 {
@@ -349,11 +364,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation7 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation8 {
@@ -364,11 +380,12 @@ img.icon:hover {
 
 @keyframes fadeInAnimation8 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .fadeInAnimation9 {
@@ -379,9 +396,36 @@ img.icon:hover {
 
 @keyframes fadeInAnimation9 {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
+}
+
+.overlay-image {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.caption {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+  padding-left: 2em;
+}
+
+.overlay-image:hover + .image-overlay {
+  opacity: 1;
 }
