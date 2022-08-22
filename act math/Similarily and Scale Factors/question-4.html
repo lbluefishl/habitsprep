@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           
+<p>A toddler has 2 sets of blocks. The blocks within each
+    set are equal-sized cubes. The blocks within one set
+    are smaller than the blocks within the other set. The
+    edge length of each smaller block is \(\frac{1}{2}\) the edge length
+    of each larger block. How many of the smaller blocks
+    must be stacked together to create an arrangement with
+    the same volume as 1 larger block?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+\(8\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+               \(6\)     
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+\(4\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+\(3\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+\(2\)
+                
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach 1</div>
+<p>The scale factor is \(1:2\). Therefore, the ratio of the volumes will be \(1^3:2^3\) or \(1:8\). </p>
+<div class="explanation-header1">Approach 2</div>  
+<p>We can make up values for the edges of the cubes. For example, the smaller block can have an edge of length 1. The larger block can have an edge of length 2.</p>
+$$ V =s^3 $$
+<p>The volume of the large cube will be \(2^3 = 8\). The small cube has a volume of \(1^3=1\). We would need 8 small cubes to fit in the larger one. </p> 
+</div>
+    </main>
+</body>
+</html>

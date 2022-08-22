@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="7">
+        <div id='question-container'>
+           <p>A scale drawing of a proposed trapezoidal landscape
+            design is shown in the figure below, with the given
+            dimensions in meters. The trapezoid consists of a right
+            triangle and a square divided into 3 isosceles right
+            triangles. The unshaded regions will be white rock; the
+            shaded triangular regions will be black rock. What is
+            the area, in square meters, that will be black rock?</p>
+<div class="centered"><img src="7.png"></div>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(20\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(25\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(45\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(60\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(70\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>We can find the area of the triangle with base 14 and height 10:</p>
+$$ A = \frac{1}{2}bh $$
+$$ A = \frac{1}{2}(14)(10) $$
+$$ A = 70 $$
+<p>We need to subtract the smaller isosceles right triangle to get just the shaded region. The  smaller isosceles right triangle is a quarter of the area of the square.</p>
+$$ A_{\text{shaded}} = 70 - \frac{1}{4}A_{\text{square}} $$
+$$ A_{\text{shaded}} = 70 - \frac{1}{4}(10)^2 $$
+$$ = 70-25 =\boxed{45} $$
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>In the ellipse shown below, \(\overline{AC}\) is the major axis with length 16 feet, \(\overline{BD}\) is the minor axis with length 12 feet, and \(E\) is the center. Point \(F\) lies on side \(\overline{BC}\) of the inscribed rhombus \(ABCD\).</p>
+<div class="centered"><img src="4.png"></div>
+                     <p style="line-height: 2;">The <i>eccentricity</i>, \(e\), of an ellipse is a measure of the
+                        flatness of the ellipse. The eccentricity of a circle is 0.
+                        The value of \(e\) is given by the ratio \(\dfrac{\sqrt{a^2-b^2}}{a}\), where \(a\)
+                        and \(b\) are half the lengths of the major and minor axes,
+                        respectively. Which of the following intervals contains
+                        the value of \(e\) for this ellipse?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(0.0\lt e \lt 0.2\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(0.2\lt e \lt 0.4\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(0.4\lt e \lt 0.6\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(0.6\lt e \lt 0.8\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                    \(0.8\lt e \lt 1.0\)
+                
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>Although there is quite a lot of reading, we can just plug values into the given formula:</p>
+$$ \frac{\sqrt{a^2-b^2}}{a} $$
+$$ \frac{\sqrt{(8)^2-(6)^2}}{8} $$
+$$ = \frac{\sqrt{64-36}}{8} $$
+$$ = \frac{\sqrt{28}}{8} $$
+$$ \approx 0.66 $$
+        </div>
+    </main>
+</body>
+</html>

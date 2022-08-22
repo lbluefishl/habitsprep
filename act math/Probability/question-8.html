@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="8">
+        <div id='question-container'>
+           <p>Meg has a bucket of plastic balls. Exactly 20% of these
+            balls are yellow, and the rest are white. Some of the
+            balls have a star on them. Exactly 6% of the balls are
+            yellow and have a star on them. Meg will randomly
+            draw 1 ball from the bucket. If the drawn ball is
+            yellow, what is the probability that it will have a star
+            on it?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+\(0.012\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                \(0.030\)    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(0.120\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(0.260\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(0.300\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach 1</div>
+<p>Suppose the number of balls in the bucket is \(x\). Then the number of yellow balls is \(0.2x\).</p>
+<p>The number of yellow balls with stars on them is \(0.06x\).</p>
+<p>Therefore, the probability that you will get a star on the yellow ball drawn is:</p>
+$$ P = \frac{\text{yellow balls with stars}}{\text{yellow balls}} $$
+$$ = \frac{0.06x}{0.2x} = \frac{0.06}{.2}$$
+$$ = \frac{30}{100} =\boxed{0.300} $$
+<div class="explanation-header1">Approach 2</div>
+<p>Use the conditional probability equation, which is a generalization of approach 1:</p>
+$$ P(A|B) = \frac{P(A\cap B)}{P(B)} $$
+$$ P(\text{star}|\text{yellow}) = \frac{P(\text{yellow and star})}{P(\text{yellow})} $$
+        </div> 
+    </main>
+</body>
+</html>

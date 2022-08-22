@@ -4,7 +4,7 @@ function getProgress() {
     topics.forEach(function (element) {
         let sum = 0
         let max = +element.getAttribute('data-questions')
-        let id = element.id
+        let id = window.location.pathname.split('/')[1].toLowerCase().replace(/%20/g,'-') + "-" + element.id
 
         for (i = 1; i <= max; i++) {
            

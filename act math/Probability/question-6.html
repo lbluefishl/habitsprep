@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="6">
+        <div id='question-container'>
+           <p>Mr. Schulte has a fair 12-sided die, with the sides
+            numbered from 1 through 12. On both Monday and
+            Tuesday, Mr. Schulte will roll the die 1 time. If the
+            side that lands faceup is numbered with a prime
+            number, Mr. Schulte will collect the homework that
+            day—otherwise, he will not collect the homework.
+            What is the probability that Mr. Schulte will collect
+            homework on both Monday and Tuesday?</p>
+            <p>(Note: 1 is NOT a prime number.)</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \left(\dfrac{5}{12}\right)^2\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \left(\dfrac{6}{12}\right)^2\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \left(\dfrac{7}{12}\right)^2\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 2\left(\dfrac{5}{12}\right)\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                    \( 2\left(\dfrac{6}{12}\right)\)
+                
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The prime numbers are 2, 3, 5, 7, 11</p>
+<p>Therefore, the probability of collecting homework each day is:</p>
+$$ P(\text{collect homework}) = \frac{5}{11} $$
+<p>The probability that homework will be collected both days:</p>
+$$ P(\text{collect homework on Monday}) \cdot P(\text{collect homework on Tuesday}) $$
+$$ = \frac{5}{12}\cdot \frac{5}{12} = \boxed{\left(\frac{5}{12}\right)^2} $$
+        </div>
+    </main>
+</body>
+</html>

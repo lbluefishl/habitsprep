@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="7">
+        <div id='question-container'>
+           
+<p>The average of a list of 4 numbers is 92.0. A new list
+    of 4 numbers has the same first 3 numbers as the
+    original list, but the fourth number in the original list
+    is 40, and the fourth number in the new list is 48. What
+    is the average of this new list of numbers?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(81.0\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(92.0\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(94.0\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(94.4\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(96.6\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach 2</div>
+<p style="line-height: 1.5;">Since there are only four numbers in both list, increasing the sum of the numbers by 8 
+    increases the average by \(\dfrac{8}{2} =4\).</p>
+            <div class="explanation-header1">Approach 1</div>
+<p>Here is the first list: </p>
+$$ L_1 = \{x_1, x_2, x_3, 40\} $$
+<p>The average or mean is:</p>
+$$  90 = \frac{x_1+x_2+x_3+40}{4}  $$
+$$ 360 = x_1+x_2+x_3+40 $$
+$$ x_1+x_2+x_3 = 320 $$
+<p>The second list has the same first three numbers:</p>
+$$ L_2 = \{x_1, x_2, x_3, 48\} $$
+<p>The average is:</p>
+$$ \overline{x} = \frac{x_1+x_2+x_3+48}{4} $$
+$$  \overline{x} = \frac{320+48}{4} $$
+$$ = \frac{368}{4} = \boxed{94} $$
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="8">
+        <div id='question-container'>
+<p style="line-height: 2;">Twelve jurors are needed for an upcoming trial. The
+    diagram below illustrates a part of the process of jury
+    selection. The 12 jurors will be selected from a jury
+    pool of about 60 people. The court records show a
+    trend that only 40% of the people who are summoned
+    for jury duty actually appear and that of the people
+    who appear, \(\dfrac{1}{3}\)are excused. If this same trend
+    continues, how many people should be summoned to
+    have as close as possible to 60 people in the jury pool?</p>
+<div style="text-align: center;"><img src="8.png" ></div>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+               \(45\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(90\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(150\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(225\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(800\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>For a jury pool of 60, where a third is excused:</p>
+$$ \left(1-\frac{1}{3}\right)\text{Appeared} = \text{Jury pool} $$
+$$ \left(\frac{2}{3}\right)\text{Appeared} = 60 $$
+$$ \text{Appeared} = 60\cdot \frac{3}{2}  = 90$$
+        <p>For 90 people to show up, when only 40% of those summoned do:</p>
+        $$ (0.4)\text{Summoned} = \text{Appeared} $$
+        $$ (0.4)\text{Summoned} = 90 $$
+        $$ \frac{4}{10}\text{Summoned} = 90 $$
+        $$ \text{Summoned} = 90\cdot \frac{10}{4} = \boxed{225}$$
+        
+         </div>
+    </main>
+</body>
+</html>

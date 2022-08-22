@@ -1,5 +1,5 @@
 let links = document.querySelectorAll('.link-to-question'); 
-let topic = document.querySelector('body').id;
+let topic = window.location.pathname.split('/').slice(-3,-1).join('-').toLowerCase().replace(/%20/g,'-');
 let clearButton = document.querySelector('button');
 
 clearButton.addEventListener('click', clearProgress)

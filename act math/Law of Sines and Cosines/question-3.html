@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>The figure below shows a flying kite. At a certain
+            moment, the kite string forms an angle of elevation of
+            \(75^\circ\) from point \(A\) on the ground. At the same moment,
+            the angle of elevation of the kite at point \(B\), \(240\) ft from
+            \(A\) on level ground, is \(45^\circ\). What is the length, in feet, of
+            the string?</p>
+<div style="text-align: center;"><img src="3.png"></div>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(60\sqrt{3}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(80\sqrt{6}\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(144\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(180\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(240\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Call the point where the kite is \(C\) and opposite side \(c=240\). Then, using law of sines,</p>
+            $$ \frac{c}{\sin{C}} = \frac{b}{\sin{B}} $$
+            $$ \frac{240}{\sin{60^\circ}} = \frac{\text{string length}}{\sin{45^\circ}} $$
+            <p>We can use the calculator, but it will end up with a decimal number. 
+                You can check to see if the first two choices match this decimal number. Alternatively, if you know your unit circle,</p>
+            $$ \frac{240}{\sin{60^\circ}} = \frac{\text{string length}}{\sin{45^\circ}} $$
+            $$ \frac{240}{\frac{\sqrt{3}}{2}} = \frac{\text{string length}}{\frac{\sqrt{2}}{2}} $$
+            $$ \frac{240}{\sqrt{3}}= \frac{\text{string length}}{\sqrt{2}} $$
+            $$ \frac{240}{\sqrt{3}}\cdot \sqrt{2} = \text{string length} $$
+            $$ \frac{240\cdot \sqrt{6}}{3} = \text{string length} $$
+            $$ \text{string length} = \boxed{80\sqrt{6}} $$
+        </div>
+    </main>
+</body>
+</html>

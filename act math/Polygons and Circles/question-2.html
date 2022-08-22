@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question4.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="2">
+        <div id='question-container'>
+           <p>In the figure shown below, \(C\) is on the segment with
+            endpoints A and D. The distance between \(A\) and \(B\) is
+            2,000 km, between \(A\) and \(C\) is 1,600 km, between \(A\)
+            and \(D\) is 2,500 km, and between \(B\) and \(C\) is 1,200 km.
+            What is the distance, in kilometers, between \(B\) and \(D\)&nbsp?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+      \(100\sqrt{481}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(300\sqrt{7}\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(900\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(1{,}200\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-5" name="answer">
+                <label for="option-5">
+                \(1{,}500\)
+                </label>
+                <span class='option-outcome' id="option-5-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>\(\overline{CD}\) can be found by subtracting \(\overline{AC}\) from \(\overline{AD}\)</p>
+$$ \overline{CD} = 2{,}500 - 1{,}600 $$
+$$ \overline{CD} = 900 $$
+<p>Since we know the two sides of \(\triangle{BCD}\), we can use the pythagorean theorem to obtain the hypotenuse.</p>
+<p>(Note: the sides also form a pythagorean triplet \(3(300)-4(300)-5(300)\) )</p>
+$$ \overline{CD}^2+\overline{BC}^2 = \overline{BD}^2 $$
+$$ 900^2 + 1{,}200^2 = \overline{BD}^2 $$
+$$ \overline{BD} = \boxed{1{,}500} $$
+            
+        </div>
+    </main>
+</body>
+</html>

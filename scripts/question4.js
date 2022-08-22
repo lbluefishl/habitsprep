@@ -6,7 +6,7 @@ const nextQuestionId = document.querySelector('body').id + '-' + (+document.quer
 */
 const titleName = document.querySelector('title')
 const questionIndex = document.querySelector('main').id;
-const questionId = window.location.pathname.split('/').slice(-2,-1)[0].toLowerCase().replace(/%20/g,'-') + "-" + questionIndex;
+const questionId = window.location.pathname.split('/').slice(-3,-1).join('-').toLowerCase().replace(/%20/g,'-') + "-" + questionIndex;
 const correctAnswerField = document.querySelector('.c');
 const correctAnswer = correctAnswerField.querySelector('input');
 const incorrectAnswers = document.querySelectorAll('.ic');

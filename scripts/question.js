@@ -2,7 +2,8 @@ const summaryButton = document.querySelector('#summary');
 const submitButton = document.querySelector('#submit');
 const skipButton = document.querySelector('#skip');
 const topic = document.querySelector('body').id;
-const questionId = document.querySelector('body').id + '-' + document.querySelector('main').id;
+
+const questionId = window.location.pathname.split('/').slice(-3,-1).join('-').toLowerCase().replace(/%20/g,'-') + "-" + document.querySelector('main').id;
 const nextQuestionId = document.querySelector('body').id + '-' + (+document.querySelector('main').id + 1);
 const correctAnswerField = document.querySelector('.c');
 const correctAnswer = correctAnswerField.querySelector('input');
