@@ -14,7 +14,7 @@
 <body>
     <main id="7">
         <div id='question-container'>
-           
+           <p>Given constants \(c\), \(d\), \(m\), and \(n\) such that \(x^2+mx+c\) has factors of \((x+2)\) and \((x+4)\) and \(x^2+nx+d\) has factors \((x+3)\) and \((x+7)\), what is \(mn\)&nbsp?</p>
 
                      
         </div>
@@ -23,35 +23,35 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(16\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(18\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(29\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(60\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-5" name="answer">
                 <label for="option-5">
-                
+                \(168\)
                 </label>
                 <span class='option-outcome' id="option-5-outcome"></span>
             </div>
@@ -63,7 +63,15 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <div style="columns: 2;">
+            <div class="centered">\(x^2+mx+c = (x+2)(x+4)\)</div>
+            $$ x^2+mx+c = x^2+6x+8 $$
+            $$ m=6$$
+            <div class="centered">\(x^2+nx+d = (x+3)(x+7)\)</div>
+            $$ x^2+nx+d = x^2+10x+21 $$
+            $$ n=10 $$
+            </div>
+            $$ mn = 6(10) = \boxed{60} $$
         </div>
     </main>
 </body>

@@ -14,36 +14,37 @@
 <body>
     <main id="4">
         <div id='question-container'>
-           
+           <p>Consider sets \(A\), \(B\), \(C\), and \(D\) such that \(B\) is a subset of \(A\), \(C\) is a subset of \(B\), and \(D\) is a subset of \(C\). Whenever \(x\) is an element of \(B\), \(x\) must be an element of:</p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(A\).
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(D\).
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(A\) and \(C\).
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(C\) and \(D\).
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -51,7 +52,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-5" name="answer">
                 <label for="option-5">
-                
+                \(A\), \(C\), and \(D\).
                 </label>
                 <span class='option-outcome' id="option-5-outcome"></span>
             </div>
@@ -63,7 +64,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+<p>Based on the information provided, our sets may look like this:</p>
+<div class="centered"><img src="4.png"></div>
+<p>If \(x\) is in \(B\), it must be in \(A\) as well since every element in \(B\) is also in \(A\).</p>
         </div>
     </main>
 </body>

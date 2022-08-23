@@ -14,22 +14,23 @@
 <body >
     <main id="10">
         <div id='question-container'>
-           
+           <p>For all positive \(x\), which of the following is equal to \(\displaystyle 2+ \frac{3x}{x+2} - \frac{6}{2x+4} \)&nbsp?</p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \( \dfrac{5x+1}{x+2}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \( \dfrac{6x-6}{2x+4}\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -37,6 +38,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( \dfrac{7x+2}{2x+4}\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +46,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \( \dfrac{3x-4}{3x+6}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -51,6 +54,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-5" name="answer">
                 <label for="option-5">
+                    \( \dfrac{3x-4}{3x+7}\)
                 
                 </label>
                 <span class='option-outcome' id="option-5-outcome"></span>
@@ -63,7 +67,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+$$ 2+ \frac{3x}{x+2} - \frac{6}{2x+4} = 2+ \frac{3x}{x+2} - \frac{6}{2(x+2)}$$
+$$  = \frac{2(2)(x+2)}{2(x+2)} + \frac{3x(2)}{2(x+2)} - \frac{6}{2(x+2)} $$
+$$ = \frac{4x+8}{2(x+2)} + \frac{6x}{2(x+2)} -\frac{6}{2(x+2)} $$
+$$ = \frac{10x+2}{2(x+2)} $$
+$$ = \frac{2(5x+1)}{2(x+2)} $$
+$$ = \boxed{\frac{5x+1}{x+2}} $$
         </div>
     </main>
 </body>

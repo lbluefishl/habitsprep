@@ -9,41 +9,46 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
     <link rel="stylesheet" href="../../styles/question.css">   
- 
+  
 </head>
 <body >
     <main id="4">
         <div id='question-container'>
-           
-
-                     
+           <p>In the figure below, the distances between 2 pairs of
+            cities are shown, as well as the angle formed at Ewing,
+            which has a measure of \(127^\circ\). Which of the following
+            values is closest to the distance, in miles, from
+            Deerborn to Fergus?</p>
+<div class="centered"><img src="4.png" ></div>
+                     <p>(Note: \(\cos{127^\circ}\approx -0.6\); \(\sin{127^\circ}\approx 0.8\))</p>
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(100\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(140\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(160\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(180\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -51,6 +56,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-5" name="answer">
                 <label for="option-5">
+                    \(200\)
                 
                 </label>
                 <span class='option-outcome' id="option-5-outcome"></span>
@@ -63,6 +69,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+<p>We can use law of cosines here.</p>
+$$ c^2=a^2+b^2-2ab\cos{C} $$
+<p>Treat angle \(C\) as Ewing. The side opposite, which we are to find, is \(c\).</p>
+$$ c^2=80^2+120^2-2(80)(120)\cos{127^\circ} $$
+$$ c^2 = 32{,}320 $$
+$$ c\approx \boxed{180} $$
 
         </div>
     </main>

@@ -14,22 +14,26 @@
 <body >
     <main id="3">
         <div id='question-container'>
-           
+           <p>A company prints contest codes on its fun-size bags of candy. Each 6-character code consists of the letter A followed by the letter H 
+            followed by 4 of the digits 0 through 9. The digits may repeat. Which of the following expressions gives the number of different 
+            6-character codes that are possible?
+           </p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \( 1(1)(10)(10)(10)(10)  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \( 2(1)(10)(9)(8)(7)  \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -37,6 +41,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( 2(1)(10)(10)(10)(10)  \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +49,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \( 2(2)(10)(9)(8)(7)  \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -51,6 +57,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-5" name="answer">
                 <label for="option-5">
+                    \( 2(2)(10)(10)(10)(10)  \)
                 
                 </label>
                 <span class='option-outcome' id="option-5-outcome"></span>
@@ -63,7 +70,8 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+<p>There are 6 characters. The first two characters are fixed, and there is only 1 option. The other 4 characters can be any of the 10 digits from 0 to 9.</p>
+$$ \boxed{1(1)(10)(10)(10)(10)} $$
         </div>
     </main>
 </body>
